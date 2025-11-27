@@ -1,7 +1,5 @@
-version: "3.8"
-
 services:
-  static-site:
+  tof:
     # Use the local Dockerfile in the current directory
     build:
       context: .
