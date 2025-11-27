@@ -1,0 +1,131 @@
+/* color scheme: */
+/* #00c2c9 blue */
+/* #111  black*/
+
+@keyframes pulse-scale {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.18);
+  }
+}
+.animate-pulse-scale {
+  animation: pulse-scale 1.2s infinite;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease;
+}
+@import "tailwindcss";
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+/* Half-width marquee for duplicated content (content repeated exactly twice).
+   Moves one content-width so all items show once before looping. */
+@keyframes marqueeHalf {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-marquee {
+  will-change: transform;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Vertical testimonials scroll animations (used by TestimonialsVertical.jsx) */
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.animate-scroll-up {
+  animation-name: scroll-up;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 35s; /* Much slower default vertical scroll */
+}
+
+.animate-scroll-down {
+  animation-name: scroll-down;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 35s; /* Much slower default vertical scroll */
+}
+
+@media (min-width: 280px) and (max-width: 639px) {
+  .hero-pt-20px {
+    padding-top: 50px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  font-family: "Roboto", "Segoe UI", sans-serif;
+}
+
+/* Great Vibes font for wedding page headings */
+@font-face {
+  font-family: "Great Vibes";
+  src: url("../assets/fonts/GreatVibes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-great-vibes {
+  font-family: "Great Vibes", cursive !important;
+}
+
+/* Smooth in-page anchor scrolling and fixed-header offset */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure anchor targets are not hidden under the fixed header */
+section[id],
+div[id] {
+  scroll-margin-top: 96px; /* approx header height incl. margins */
+}

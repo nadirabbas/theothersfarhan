@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  static-site:
+    # Use the local Dockerfile in the current directory
+    build:
+      context: .
+      dockerfile: Dockerfile # Refers to the 'Optimized Dockerfile for Static Next.js' in the Canvas
+
+    # Give the container a friendly name
+    container_name: tof
+
+    # Map the container's exposed port (80, where Nginx is listening) to the host machine's port (8080)
+    ports:
+      - "8087:80"
+
+    # Ensures the service tries to start again if it fails
+    restart: always

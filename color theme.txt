@@ -1,0 +1,117 @@
+Primary Color Base
+
+#004526 – Deep Green (primary brand color)
+
+Darker Shades (for headers, overlays, accents)
+
+#00381C – Very dark green, almost black
+
+#002E16 – For shadows, deep footer areas
+
+#111 – Extra depth for overlays or hover effects
+
+Lighter Shades (for backgrounds, highlights)
+
+#006938 – Slightly brighter green for buttons or highlights
+
+#008A50 – Fresh green for accents, call-to-action elements
+
+#00A967 – Light, vibrant green for hover effects, subtle backgrounds
+
+Neutral Complementary Shades (for text and balance)
+
+#FFFFFF – Clean white for text or background contrast
+
+#F0F0F0 – Light grey background sections
+
+#A0A0A0 – Medium grey for secondary text
+
+
+
+
+
+
+
+
+
+Secondary Color Base
+
+#555555 – Mid Grey (neutral secondary color)
+
+Darker Shades (for text, overlays, accents)
+
+#3C3C3C – Dark grey, for headings or overlay text
+
+#2A2A2A – Deep grey for footers, borders, or subtle accents
+
+#1A1A1A – Almost black, for strong contrast elements
+
+Lighter Shades (for backgrounds, subtle elements)
+
+#7A7A7A – Light grey for cards, sections, or buttons
+
+#9C9C9C – For hover states or subtle highlights
+
+#BEBEBE – Very light grey for backgrounds, borders, or secondary text
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Gradients from #00c2c9 → #111
+
+<!-- 1. Aqua Noir -->
+<div class="bg-gradient-to-r from-[#00c2c9] to-[#111]"></div>
+
+<!-- 2. Ocean Dusk -->
+<div class="bg-gradient-to-r from-[#00c2c9] via-[#00666a] to-[#111]"></div>
+
+<!-- 3. Deep Abyss -->
+<div class="bg-gradient-to-r from-[#00c2c9] via-[#004b50] to-[#111]"></div>
+
+<!-- 4. Cyan Shadow -->
+<div class="bg-gradient-to-r from-[#00c2c9] via-[#008a8f] to-[#0a0a0a]"></div>
+
+<!-- 5. Electric Midnight -->
+<div class="bg-gradient-to-r from-[#00e0e8] via-[#00a2a9] to-[#111]"></div>
+
+
+
+
+
+
+
+Gradients from [green] #002312 → #00c2c9
+
+<!-- 1. Forest Aqua -->
+<div class="bg-gradient-to-r from-[#002312] to-[#00c2c9]"></div>
+
+<!-- 2. Deep Jungle -->
+<div class="bg-gradient-to-r from-[#002312] via-[#005f50] to-[#00c2c9]"></div>
+
+<!-- 3. Emerald Tide -->
+<div class="bg-gradient-to-r from-[#003a26] via-[#007a6e] to-[#00c2c9]"></div>
+
+<!-- 4. Teal Bloom -->
+<div class="bg-gradient-to-r from-[#004a34] via-[#00a0a5] to-[#00c2c9]"></div>
+
+<!-- 5. Midnight Lagoon -->
+<div class="bg-gradient-to-r from-[#001a0e] via-[#005c57] to-[#00c2c9]"></div>
+

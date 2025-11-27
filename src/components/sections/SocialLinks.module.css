@@ -1,0 +1,13 @@
+@keyframes borderPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 4px #00e09e, 0 0 6px #00e09e;
+  }
+  50% {
+    box-shadow: 0 0 8px #00e09e, 0 0 10px #00e09e;
+  }
+}
+
+.cardWithPulse {
+  animation: borderPulse 2s ease-in-out infinite;
+}
